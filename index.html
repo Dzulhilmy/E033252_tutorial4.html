@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial 4</title>
+    </head>
+    <style>
+        h2 {
+            color: rgb(48, 148, 255);
+        }
+
+        .clickbutton {
+            border-radius: 5px;
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+            display: none;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function myFunction1() {
+            document.getElementById("image1").style.display = "inline-block" 
+        }
+        function myFunction2() {
+            document.getElementById("image2").style.display = "inline-block" 
+        }
+        function myFunction3() {
+            document.getElementById("image3").style.display = "inline-block" 
+        }
+        function myFunction4() {
+            window.alert("This page was printed.")
+        }
+    </script>
+    <body>
+        <div>
+            <h2>JavaScript Tutorial 4</h2>
+        </div>
+        <div class="clickbutton">
+            <button onclick="myFunction1()">My View</button>
+            <button onclick="myFunction2()">My House</button>
+            <button onclick="myFunction3()">My Hobby</button>
+            <button onclick="this.innerHTML = Date()">The time is ?</button>
+            <button onclick="myFunction4()">Print Page</button><br>
+            <img id="image1" src="photo_2025-06-12 19.35.30.jpeg" alt="image1">
+            <img id="image2" src="photo_2025-06-12 19.49.23.jpeg" alt="image2">
+            <img id="image3" src="study.jpeg" alt="image3">
+        </div>
+    </body>
+</html>
